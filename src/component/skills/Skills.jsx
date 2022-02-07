@@ -1,12 +1,12 @@
 import React from 'react';
 import './skill.css'
-import { ProgressBar, Button } from 'react-bootstrap';
+import { ProgressBar } from 'react-bootstrap';
 
 export default function Skills({name,img,status,num}) {
     return (
         <div class="container">
             <div class="image">
-                <img src={img}></img>
+                <img src={img} alt="" />
             </div>
             <div class="content">
                 <div class="info">
