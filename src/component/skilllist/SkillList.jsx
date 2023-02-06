@@ -8,19 +8,23 @@ const SkillList = () => {
       <div className="sl-texts">
         <h1 className="sl-title">Skills</h1>
         <p className="sl-desc">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil atque non enim at quisquam aut qui voluptates, neque incidunt id minima pariatur maiores.
+          These are some of my tech skills on which I have worked while building
+          some projects and working for client.
         </p>
       </div>
       <div className="sl-list">
         {skillData.map((item) => (
-          <Skills key={item.id} num={item.num} img={item.img} status={item.status} name={item.name}/>
+          <Skills
+            key={item.id}
+            num={item.num}
+            img={item.img}
+            status={item.status}
+            name={item.name}
+          />
         ))}
-      
       </div>
     </div>
   );
 };
 
 export default SkillList;
-
-
